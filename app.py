@@ -1,3 +1,6 @@
+import streamlit as st
+import pandas as pd
+
 # Membaca dataset dari file CSV
 data = pd.read_csv('cleaned_dataset.csv')
 
