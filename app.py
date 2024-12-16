@@ -54,10 +54,3 @@ if produk['rate'] >= 4.0:
     st.write(f"Produk {nama_produk} **Direkomendasikan** berdasarkan rating Shopee.")
 else:
     st.write(f"Produk {nama_produk} **Tidak Direkomendasikan** berdasarkan rating Shopee.")
-
-# Hasil Akhir: Berdasarkan Prediksi Model
-st.subheader(f"Hasil Prediksi Model")
-if prediction == 1:
-    st.write(f"Produk {nama_produk} **Direkomendasikan** berdasarkan prediksi model.")
-else:
-    st.write(f"Produk {nama_produk} **Tidak Direkomendasikan** berdasarkan prediksi model.")
