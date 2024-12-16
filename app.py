@@ -10,8 +10,11 @@ scaler = joblib.load('scaler.pkl')  # Memuat scaler yang telah dilatih
 # Membaca dataset
 data = pd.read_csv('dataset_dengan_rekomendasi.csv')
 
-# Menampilkan nama produk sebagai dropdown
-nama_produk = st.selectbox("Pilih nama produk:", data['nama_produk'])
+# Menambahkan teks bold menggunakan markdown sebelum selectbox
+st.markdown("### **Pilih nama produk:**")
+
+# Menampilkan selectbox untuk memilih produk
+nama_produk = st.selectbox("", data['nama_produk'])
 
 # Ambil data produk berdasarkan nama
 produk = data[data['nama_produk'] == nama_produk].iloc[0]
