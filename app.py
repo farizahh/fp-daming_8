@@ -37,10 +37,6 @@ sample_input = [[
     produk['PA']
 ]]
 
-# Jika model menggunakan scaler, lakukan transformasi pada input
-if scaler:
-    sample_input = scaler.transform(sample_input)
-
 # Menampilkan sample input untuk verifikasi
 st.write("Sample input untuk model:", sample_input)
 
