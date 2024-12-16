@@ -14,7 +14,7 @@ produk = data[data['nama_produk'] == nama_produk].iloc[0]
 # Load trained model
 model = joblib.load('rekomendasi_model.pkl')  # Pastikan path file model sesuai
 
-prediction = model.predict(sample_input_scaled)[0]
+prediction = model.predict(model)[0]
 
 # Menampilkan hasil prediksi
 st.subheader(f"Hasil Rekomendasi Berdasarkan Model untuk {nama_produk}")
