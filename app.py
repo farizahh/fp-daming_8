@@ -5,7 +5,7 @@ import joblib
 # Load dataset
 data = pd.read_csv('dataset_dengan_rekomendasi.csv')
 
-# Load trained model
+# Load trained model and scaler (if used)
 model = joblib.load('rekomendasi_model.pkl')
 
 # Aplikasi Streamlit
@@ -36,6 +36,10 @@ sample_input = [[
     produk['SPF'], 
     produk['PA']
 ]]
+
+# Jika model menggunakan scaler, lakukan transformasi pada input
+if scaler:
+    sample_input = scaler.transform(sample_input)
 
 # Menampilkan sample input untuk verifikasi
 st.write("Sample input untuk model:", sample_input)
