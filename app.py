@@ -14,17 +14,6 @@ produk = data[data['nama_produk'] == nama_produk].iloc[0]
 # Load trained model
 model = joblib.load('rekomendasi_model.pkl')  # Pastikan path file model sesuai
 
-# Misalkan sample_input adalah dictionary dari kolom data
-sample_input = pd.DataFrame({
-    'tingkat_penjualan': [produk['tingkat_penjualan']],
-    'bpom': [produk['bpom']],
-    'rate': [produk['rate']],
-    'SPF': [produk['SPF']],
-    'PA': [produk['PA']]
-})
-
-# Jika model membutuhkan scaling, jangan lupa untuk scaling data
-sample_input_scaled = scaler.transform(sample_input)
 prediction = model.predict(sample_input_scaled)[0]
 
 # Menampilkan hasil prediksi
