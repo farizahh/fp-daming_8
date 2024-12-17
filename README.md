@@ -16,5 +16,8 @@ Aplikasi ini memungkinkan pengguna untuk memilih produk sunscreen dan mendapatka
 - **Scikit-learn**: Untuk pelatihan dan penggunaan model machine learning.
 - **Joblib**: Untuk menyimpan dan memuat model machine learning.
 
-## Cara Penggunaan
+## Dataset
+- **dataset.csv**: Dataset asli sebelum dilakukan preprocessing data, termasuk cleaning dan encoding.
+- **cleansed_dataset.csv**: Dataset kedua, hasil dari preprocessing data, dengan tambahan atribut SPF dan PA.
+- **dataset_dengan_rekomendasi.csv**: Dataset terakhir yang digunakan dalam pelatihan model
 
