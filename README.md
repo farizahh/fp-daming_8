@@ -25,5 +25,9 @@ Aplikasi ini memungkinkan pengguna untuk memilih produk sunscreen dan mendapatka
 - **preprocessing.ipynb**: Kode program untuk praproses hingga pembuatan model
 - **app.py**: Kode program untuk deployment project
 
+## Hasil Model
+- **rekomendasi_model.pkl**: Model yang digunakan dan dilatih menggunakan model Logistic Regression
+- **scaler.pkl**: Model untuk normalisasi fitur input
+
 ## Deployment
 Untuk mengakses hasil prediksi, silahkan kunjungi link berikut: https://fp-daming8.streamlit.app/  
