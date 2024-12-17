@@ -21,3 +21,5 @@ Aplikasi ini memungkinkan pengguna untuk memilih produk sunscreen dan mendapatka
 - **cleansed_dataset.csv**: Dataset kedua, hasil dari preprocessing data, dengan tambahan atribut SPF dan PA.
 - **dataset_dengan_rekomendasi.csv**: Dataset terakhir yang digunakan dalam pelatihan model
 
+## Deployment
+Untuk mengakses hasil prediksi, silahkan kunjungi link berikut: https://fp-daming8.streamlit.app/  
